@@ -42,7 +42,6 @@ bool point_in_circle(float dist, float radius) {
 
 int main()
 {
-    // Declaring tuple
     tuple <float, float> origin=make_tuple(0.0,0.0); 
     tuple <float, float> rand_point=make_tuple(10.0,20.0);
     float circle_radius=1, square_side=2, random_num;
@@ -62,7 +61,7 @@ int main()
         if (in_circle)
             num_points_in_circle += 1;
             
-        pi_value = num_points_in_circle * 1.0 / square_area;
+        pi_value = (num_points_in_circle *1.0/ i) * square_area;
         cout<<pi_value<<endl;
     }
 
