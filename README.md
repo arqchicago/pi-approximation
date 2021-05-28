@@ -1,5 +1,5 @@
-# \Pi Approximation
-In this project, Monte Carlo Simulation is used to approximate the value of \pi.  
+# Pi Approximation
+In this project, Monte Carlo Simulation is used to approximate the value of pi.  
 
 ## Blog 
 My blog on this project can be accessed at TO BE PUBLISHED.
@@ -19,8 +19,8 @@ In each iteration of the Monte Carlo Simulation, a point is randomly generated i
 origin is calculated. If that distance is less than or equal to the radius, the point is contained inside of the circle. If the distance
 of the point is greater than the radius, then the point is outside of the circle (but still within the square). These iterations are 
 repeated 10,000 times and the percentage of points inside of the circle is calculated. This percentage can be used to approximate the
-value of \pi by multiplying it with 4 (area of the square). In other words, we are approximating the portion of 4 unit-squared area of square
-that is contained inside of the circle. Since the radius of circle is 1 unit, this approximated area of circle should be close to the value of \pi. 
+value of pi by multiplying it with 4 (area of the square). In other words, we are approximating the portion of 4 unit-squared area of square
+that is contained inside of the circle. Since the radius of circle is 1 unit, this approximated area of circle should be close to the value of pi. 
 
 ## Visuals
-<To Be Completed>.
+To Be Completed.

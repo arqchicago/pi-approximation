@@ -10,6 +10,7 @@ Created on Sat Mar 27 12:22:02 2020
 #include<tuple>
 #include <string> 
 #include <cmath> 
+#include <fstream>
 
 using namespace std;
 
@@ -50,8 +51,13 @@ int main()
     float circle_radius=1, square_side=2, square_area, random_num, distance, pi_value;
 	int simulations=10001, circle_counter=0, min=-1, max=1;
     bool in_circle;
-
-    square_area = square_side * square_side;
+	ofstream dataFile;
+    dataFile.open("output/data.csv");
+	
+	// headers
+	dataFile<<"iter" <<","<<"x"<<","<<"y"<<","<<"in_circle"<<","<<"pi_appx"<<endl;
+    
+	square_area = square_side * square_side;
     
     for (int i = 0; i < simulations; i++) {
 
@@ -70,8 +76,11 @@ int main()
             
 		// approximate pi by multiplying ratio of points inside circle to the area of square
         pi_value = (circle_counter *1.0/ i) * square_area;
-        cout<<pi_value<<endl;
+        cout<<"iter "+std::to_string(i)+":  "<<pi_value<<endl;
+		dataFile<<i<<","<<get<0>(rand_point)<<","<<get<1>(rand_point)<<","<<in_circle<<","<<pi_value<<endl;
     }
+	
+	dataFile.close();
 
     return 0;
 }
