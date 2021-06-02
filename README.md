@@ -2,7 +2,7 @@
 In this project, Monte Carlo Simulation is used to approximate the value of pi.  
 
 ## Blog 
-My blog on this project can be accessed at TO BE PUBLISHED.
+My blog on this project can be accessed at https://mlai1.blogspot.com/2021/06/monte-carlo-simulation-to-approximate.html.
 
 ## Monte Carlo Simulation
 Monte Carlo Simulation uses repeated iterations along with randomness to solve problems and approximate answers. The simulation requires
